@@ -1,11 +1,17 @@
-import js from "@eslint/js";
-import { defineConfig } from "eslint/config";
+import js from '@eslint/js';
+import stylistic from '@stylistic/eslint-plugin';
+import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
-  { files: ["**/*.js"], plugins: { js }, extends: ["js/recommended"] },
+  { files: ['**/*.js'], plugins: { js }, extends: ['js/recommended'] },
   {
+    plugins: {
+      '@stylistic': stylistic,
+    },
     rules: {
-			"semi": "error",
-		},
+      '@stylistic/semi': 'error',
+      '@stylistic/indent': ['error', 2],
+      '@stylistic/quotes': ['error', 'single'],
+    },
   },
 ]);
