@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 
-import { checkIfInstanceOf } from "./checkIfInstanceOf";
+import { checkIfInstanceOf } from ".";
 
 describe("checkIfInstanceOf", () => {
   it("should check if a given value is an instance of a given class or superclass", () => {
