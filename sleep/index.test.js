@@ -1,9 +1,9 @@
-import { describe, expect, it, vi } from 'vitest';
+import { describe, expect, it, vi } from "vitest";
 
-import { sleep } from '.';
+import { sleep } from ".";
 
-describe('sleep', () => {
-  it('should return a promise that resolves after specified time', async () => {
+describe("sleep", () => {
+  it("should return a promise that resolves after specified time", async () => {
     vi.useFakeTimers();
 
     let cb = vi.fn();

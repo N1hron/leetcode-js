@@ -1,9 +1,9 @@
-import { describe, expect, it } from 'vitest';
+import { describe, expect, it } from "vitest";
 
-import { createCounter } from '.';
+import { createCounter } from ".";
 
-describe('createCounter', () => {
-  it('creates counter function that returns 1 more than the previous value', () => {
+describe("createCounter", () => {
+  it("creates counter function that returns 1 more than the previous value", () => {
     let counter = createCounter(10);
 
     expect(counter()).toBe(10);
